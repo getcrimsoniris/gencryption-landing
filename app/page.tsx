@@ -69,10 +69,6 @@ export default function HomePage() {
                 <span className="text-xs font-medium">Zero-Knowledge Architecture</span>
               </div>
               <div className="flex items-center space-x-2">
-                <Lock className="w-4 h-4" />
-                <span className="text-xs font-medium">AES-256 Encryption</span>
-              </div>
-              <div className="flex items-center space-x-2">
                 <div className="w-4 h-4 bg-green-500 rounded-full"></div>
                 <span className="text-xs font-medium">Open Source</span>
               </div>
@@ -81,26 +77,23 @@ export default function HomePage() {
         </div>
       </main>
 
-      {/* Features Section */}
+      {/* Product Section */}
       <section id="features" className="px-6 py-20 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Powerful Features for Genomic Data
+              Product
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Everything you need to securely manage, analyze, and share your genetic information
-            </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="flex flex-col items-center text-center space-y-4">
               <div className="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center">
                 <Shield className="w-8 h-8 text-purple-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900">Secure Storage</h3>
+              <h3 className="text-xl font-semibold text-gray-900">Explore securely</h3>
               <p className="text-gray-600 leading-relaxed">
-                Military-grade encryption ensures your genomic data is protected with the highest security standards.
+                Gencryption provides a desktop app to explore your genome without your data ever leaving your control.
               </p>
             </div>
             
@@ -108,9 +101,9 @@ export default function HomePage() {
               <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center">
                 <BarChart3 className="w-8 h-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900">Data Analysis</h3>
+              <h3 className="text-xl font-semibold text-gray-900">Use across devices</h3>
               <p className="text-gray-600 leading-relaxed">
-                Advanced analytics tools to explore and understand your genetic information with powerful insights.
+                Encrypt your genome using a crypto wallet and back it up with your private keys.
               </p>
             </div>
             
@@ -118,19 +111,9 @@ export default function HomePage() {
               <div className="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center">
                 <Share2 className="w-8 h-8 text-green-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900">Controlled Sharing</h3>
+              <h3 className="text-xl font-semibold text-gray-900">Participate in research</h3>
               <p className="text-gray-600 leading-relaxed">
-                Share your data selectively with researchers while maintaining full control over what&apos;s shared.
-              </p>
-            </div>
-            
-            <div className="flex flex-col items-center text-center space-y-4">
-              <div className="w-16 h-16 bg-indigo-100 rounded-xl flex items-center justify-center">
-                <Lock className="w-8 h-8 text-indigo-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900">End-to-End Encryption</h3>
-              <p className="text-gray-600 leading-relaxed">
-                Your data is encrypted at rest and in transit, ensuring complete privacy and security.
+                Share your encrypted data with leading scientists to advance scientific understanding while never sharing your personal information.
               </p>
             </div>
           </div>
