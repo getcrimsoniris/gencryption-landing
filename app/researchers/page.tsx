@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button"
-import { Shield, Lock, BarChart3, Share2 } from "lucide-react"
+import { Shield, Lock, Users, Globe, Database, Search } from "lucide-react"
+import Link from "next/link"
 
-export default function HomePage() {
+export default function ResearchersPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 to-indigo-50">
       {/* Header */}
@@ -14,15 +15,18 @@ export default function HomePage() {
             <span className="text-xl font-semibold text-gray-900">gencryption</span>
           </div>
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-gray-600 hover:text-gray-900 transition-colors">
+            <Link href="/" className="text-gray-600 hover:text-gray-900 transition-colors">
+              Home
+            </Link>
+            <Link href="/#features" className="text-gray-600 hover:text-gray-900 transition-colors">
               Features
-            </a>
-            <a href="#security" className="text-gray-600 hover:text-gray-900 transition-colors">
+            </Link>
+            <Link href="/#security" className="text-gray-600 hover:text-gray-900 transition-colors">
               Security
-            </a>
-            <a href="/researchers" className="text-gray-600 hover:text-gray-900 transition-colors">
+            </Link>
+            <Link href="/researchers" className="text-purple-700 font-medium">
               Researchers
-            </a>
+            </Link>
             <Button variant="outline" className="border-purple-200 text-purple-700 hover:bg-purple-50 bg-transparent">
               Buy $GENCRYPT
             </Button>
@@ -35,12 +39,13 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto text-center">
           {/* Main Heading */}
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Not your keys, not your <span className="text-purple-700">DNA</span>
+            Recruit participants worldwide without the risk of holding <span className="text-purple-700">medical data</span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
-            The world&apos;s first wallet for genome data, secured by the same technology that secures trillions of dollars of crypto asset.
+            Access a global network of research participants while maintaining zero liability for sensitive genetic information. 
+            Our homomorphic encryption ensures data never leaves the participant&apos;s control.
           </p>
 
           {/* CTA Buttons */}
@@ -49,20 +54,20 @@ export default function HomePage() {
               size="lg"
               className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 text-lg font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-200"
             >
-              Read the whitepaper
+              Start Research Project
             </Button>
             <Button
               variant="outline"
               size="lg"
               className="border-2 border-purple-200 text-purple-700 hover:bg-purple-50 px-8 py-3 text-lg font-medium rounded-full transition-all duration-200 bg-transparent"
             >
-              Contribute on Github
+              View Documentation
             </Button>
           </div>
 
           {/* Trust Indicators */}
           <div className="mt-16 pt-8 border-t border-purple-100">
-            <p className="text-sm text-gray-500 mb-4">Trusted by researchers and individuals worldwide</p>
+            <p className="text-sm text-gray-500 mb-4">Trusted by leading research institutions worldwide</p>
             <div className="flex justify-center items-center space-x-8 text-gray-400">
               <div className="flex items-center space-x-2">
                 <Shield className="w-4 h-4" />
@@ -70,11 +75,11 @@ export default function HomePage() {
               </div>
               <div className="flex items-center space-x-2">
                 <Lock className="w-4 h-4" />
-                <span className="text-xs font-medium">AES-256 Encryption</span>
+                <span className="text-xs font-medium">HIPAA Compliant</span>
               </div>
               <div className="flex items-center space-x-2">
                 <div className="w-4 h-4 bg-green-500 rounded-full"></div>
-                <span className="text-xs font-medium">Open Source</span>
+                <span className="text-xs font-medium">IRB Approved</span>
               </div>
             </div>
           </div>
@@ -86,51 +91,51 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Powerful Features for Genomic Data
+              Research Tools Built for Privacy
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Everything you need to securely manage, analyze, and share your genetic information
+              Everything you need to conduct groundbreaking research while respecting participant privacy
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="flex flex-col items-center text-center space-y-4">
               <div className="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center">
-                <Shield className="w-8 h-8 text-purple-600" />
+                <Users className="w-8 h-8 text-purple-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900">Secure Storage</h3>
+              <h3 className="text-xl font-semibold text-gray-900">Global Recruitment</h3>
               <p className="text-gray-600 leading-relaxed">
-                Military-grade encryption ensures your genomic data is protected with the highest security standards.
+                Access diverse participant pools from around the world without geographical limitations.
               </p>
             </div>
             
             <div className="flex flex-col items-center text-center space-y-4">
               <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center">
-                <BarChart3 className="w-8 h-8 text-blue-600" />
+                <Database className="w-8 h-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900">Data Analysis</h3>
+              <h3 className="text-xl font-semibold text-gray-900">Zero Data Liability</h3>
               <p className="text-gray-600 leading-relaxed">
-                Advanced analytics tools to explore and understand your genetic information with powerful insights.
+                Never store sensitive genetic data. All analysis happens on encrypted data in transit.
               </p>
             </div>
             
             <div className="flex flex-col items-center text-center space-y-4">
               <div className="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center">
-                <Share2 className="w-8 h-8 text-green-600" />
+                <Search className="w-8 h-8 text-green-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900">Controlled Sharing</h3>
+              <h3 className="text-xl font-semibold text-gray-900">Advanced Analytics</h3>
               <p className="text-gray-600 leading-relaxed">
-                Share your data selectively with researchers while maintaining full control over what&apos;s shared.
+                Run complex genomic analyses on encrypted data without compromising participant privacy.
               </p>
             </div>
             
             <div className="flex flex-col items-center text-center space-y-4">
               <div className="w-16 h-16 bg-indigo-100 rounded-xl flex items-center justify-center">
-                <Lock className="w-8 h-8 text-indigo-600" />
+                <Globe className="w-8 h-8 text-indigo-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900">End-to-End Encryption</h3>
+              <h3 className="text-xl font-semibold text-gray-900">Compliance Ready</h3>
               <p className="text-gray-600 leading-relaxed">
-                Your data is encrypted at rest and in transit, ensuring complete privacy and security.
+                Built-in compliance with GDPR, HIPAA, and other international privacy regulations.
               </p>
             </div>
           </div>
@@ -145,19 +150,20 @@ export default function HomePage() {
               <Lock className="w-8 h-8 text-purple-600" />
             </div>
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Advanced Security Technology
+              Research Without Risk
             </h2>
           </div>
           
           <p className="text-xl text-gray-700 leading-relaxed mb-12 max-w-3xl mx-auto">
-            Gencrytion is based on the latest advances in homomorphic encryption, meaning that even when you share your genetic data with developers/researchers it remains encrypted and no information can be linked back to you.
+            Our homomorphic encryption technology allows you to analyze genetic data without ever seeing the raw information. 
+            Participants maintain full control while you get the insights you need for breakthrough discoveries.
           </p>
           
           <Button
             size="lg"
             className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 text-lg font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-200"
           >
-            Read our white paper
+            Read our research whitepaper
           </Button>
         </div>
       </section>
